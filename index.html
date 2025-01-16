@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>79 dars JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="ota-div">
+        <div class="a">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="b">
+            <canvas id="myChart2"></canvas>
+        </div>
+        <div class="a">
+            <canvas id="myChart3"></canvas>
+        </div>
+        <div class="b">
+            <canvas id="myChart4"></canvas>
+        </div>
+        <div class="a">
+            <canvas id="myChart5"></canvas>
+        </div>
+        <div class="b">
+            <canvas id="myChart6"></canvas>
+        </div>
+        <div class="a">
+            <canvas id="myChart7"></canvas>
+        </div>
+        <div class="b">
+            <canvas id="myChart8"></canvas>
+        </div>
+
+    </div>   
+
+        <script>
+            const a = document.getElementById('myChart');
+
+            new Chart(a, {
+                type: 'bar',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+          
+            const b = document.getElementById('myChart2');
+
+            new Chart(b, {
+                type: 'pie',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+      
+            const c = document.getElementById('myChart3');
+
+            new Chart(c, {
+                type: 'line',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        
+            const d = document.getElementById('myChart4');
+
+            new Chart(d, {
+                type: 'polarArea',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+    
+            const e = document.getElementById('myChart5');
+
+            new Chart(e, {
+                type: 'bubble',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+       
+            const f = document.getElementById('myChart6');
+
+            new Chart(f, {
+                type: 'polarArea',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+      
+            const g = document.getElementById('myChart7');
+
+            new Chart(g, {
+                type: 'radar',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+      
+            const h = document.getElementById('myChart8');
+
+            new Chart(h, {
+                type: 'scatter',
+                data: {
+                    labels: ['Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh', 'Abdulloh'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+       
+  
+            
+
+
+        </script>
+
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
